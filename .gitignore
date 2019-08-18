@@ -1,6 +1,12 @@
 # Compiled class file
 *.class
 
+# Other Files to ignore
+*.classpath
+*.project
+*.settings/
+
+
 # Log file
 *.log
 
