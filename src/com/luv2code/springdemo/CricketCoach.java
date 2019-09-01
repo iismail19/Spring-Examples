@@ -9,6 +9,26 @@ public class CricketCoach implements Coach {
 	private String emailAddress;
 	private String team;
 	
+	// Setters
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("CricketCoach: insde setter methiod - setEmailAddress");
+		this.emailAddress = emailAddress;
+	}
+
+	public void setTeam(String team) {
+		System.out.println("CricketCoach: insde setter methiod - setTeam");
+		this.team = team;
+	}
+	
+	// getters 
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
 	// Setter Injection Method
 	private FortuneService fortuneService;
 	
@@ -36,13 +56,5 @@ public class CricketCoach implements Coach {
 		return fortuneService.getFortune();
 	}
 
-	// Setters
-	public void setEmailAddress(String emailAddress) {
-		this.emailAddress = emailAddress;
-	}
-
-	public void setTeam(String team) {
-		this.team = team;
-	}
 
 }
