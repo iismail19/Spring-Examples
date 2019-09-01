@@ -2,6 +2,13 @@ package com.luv2code.springdemo;
 
 public class CricketCoach implements Coach {
 	
+	// Injecting Literal Values
+	// 1. Create Private properties
+	// 2. Create Setter methods
+	
+	private String emailAddress;
+	private String team;
+	
 	// Setter Injection Method
 	private FortuneService fortuneService;
 	
@@ -27,6 +34,15 @@ public class CricketCoach implements Coach {
 	public String getDailyFortune() {
 		
 		return fortuneService.getFortune();
+	}
+
+	// Setters
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
+	}
+
+	public void setTeam(String team) {
+		this.team = team;
 	}
 
 }
